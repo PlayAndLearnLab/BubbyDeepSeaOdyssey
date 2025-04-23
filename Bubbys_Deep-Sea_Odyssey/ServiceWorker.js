@@ -1,9 +1,9 @@
 const cacheName = "GA Tech Play _ Learn Lab-Bubby's Deep-Sea Odyssey-1.2";
 const contentToCache = [
-    "Build/Bubby's Deep-Sea Obyssey - April 2025 Build.loader.js",
-    "Build/Bubby's Deep-Sea Obyssey - April 2025 Build.framework.js.br",
-    "Build/Bubby's Deep-Sea Obyssey - April 2025 Build.data.br",
-    "Build/Bubby's Deep-Sea Obyssey - April 2025 Build.wasm.br",
+    "Build/Bubby's Deep-Sea Odyssey - April 2025 Build.loader.js",
+    "Build/Bubby's Deep-Sea Odyssey - April 2025 Build.framework.js.unityweb",
+    "Build/Bubby's Deep-Sea Odyssey - April 2025 Build.data.unityweb",
+    "Build/Bubby's Deep-Sea Odyssey - April 2025 Build.wasm.unityweb",
     "TemplateData/style.css"
 
 ];
