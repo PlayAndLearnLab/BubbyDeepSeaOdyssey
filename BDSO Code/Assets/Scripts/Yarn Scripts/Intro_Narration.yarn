@@ -1,0 +1,221 @@
+﻿title: Tutorial
+tags:
+---
+<<playerCantMove Player>>
+Bubby: Hello! I'm Bubby the AI-powered Anglerfish. It's nice to meet you!
+Bubby: I went to the ocean surface to see my human friends, but a new software update scrambled my navigation data so I don't know the way home anymore! Can you help me get home?
+Bubby: You can use my LIDAR sensor to help find the way home. My LIDAR can be turned on and off by pressing the left mouse button.
+Bubby: LIDAR measures how long the light beam takes to reflect back to show me where objects are even when I can't see them!
+Bubby: LIDAR can show us where the walls and obstacles are, but it costs energy to use. The green bar on the left keeps track of how much power I have left.
+Bubby: If it gets low or runs out, we'll need to disable sensors until it recharges so I can use my LIDAR again!
+Bubby: Let's get going! You can use the arrow keys to move me. Let's head for the bright red point marked on my map!
+<<playerCanMove Player>>
+===
+
+title: SpikeBall
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>>
+Bubby: Oh no! We've run into a spike ball. We can avoid these by using my LIDAR sensor! It should show where the spike balls are - we should swim around the areas it lights up!
+<<playerCanMove Player>>
+===
+
+title: Chains
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>>
+Bubby: Oh no! We've run into some chains. We can avoid these by using my LIDAR sensor - direct me away from the areas it lights up!
+<<playerCanMove Player>>
+===
+
+title: OuchSonar
+tags:
+---
+Bubby: Ouch! That hurt- let's avoid those in the future! You can use my SONAR sensor to find these obstacles!
+===
+
+title: OuchLidar
+tags:
+---
+Bubby: Ouch! That hurt- let's avoid those in the future! You can use my LIDAR sensor to find these obstacles!
+===
+
+title: CausticAreaLIDAR
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>>
+Bubby: Oh look, we've run into an area of murky water! We can swim through it, but when sediment on the seafloor gets disturbed like this it messes with our LIDAR sensor.
+Bubby: Do you know why the LIDAR sensor won't work in murky water?
+-> No, do you have any idea why?
+    Bubby: Hmm, I think it's because the sediment in the water messes with the LIDAR ray!
+    Bubby: The light can't pierce the murky water, so it can't tell us about any potential obstacles in the area.
+-> Yes I do!
+    Bubby: Really? Awesome! Why can't we use LIDAR here?
+    -> The sediment blocks with the LIDAR's light ray!
+        Bubby: Yeah you're right! Good thinking!
+    -> The water is moving too fast for LIDAR to get through!
+        Bubby: Good guess, but the water movement won't affect the light ray. The light can't pass through dirt well though, which is why we can't use LIDAR!
+    -> It takes more energy to use LIDAR with all the dirt around.
+        Bubby: Good guess, but the amount of energy needed to make the light ray doesn't change. The light can't pass through all that dirt moving around, which is why we can't use LIDAR!
+    -> Actually, I don't know. Do you know?
+        Bubby: Hmm, I think it's because the sediment in the water messes with the LIDAR ray!
+        Bubby: The light can't pierce the murky water well, so it can't tell us about potential obstacles within the murky water.
+Bubby: I'll start preparing my SONAR sensor - it should be ready once we reach the next area. SONAR can help us navigate big areas of murky water!
+<<playerCanMove Player>>
+===
+
+title: CausticAreaSONAR
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>> <<setSonar SonarPulse false>>
+Bubby: Here's another area of murky water! Our LIDAR sensor won't work here - do you remember why?
+-> No, can you remind me?
+    Bubby: LIDAR won't work because the sediment in the water disturbs with the LIDAR ray! The light can't get through the dirt.
+    Bubby: We can use SONAR instead - SONAR can pierce through murky water just fine since it uses sound instead of light! It'll show us if there's anything hiding in here.
+-> Yes I do!
+    Bubby: Awesome! Why can't we use LIDAR here?
+    -> The sediment messes with the LIDAR's light ray!
+        Bubby: Yeah you're right! Good thinking! Instead, we can use SONAR to find out if there are things hiding in this area. SONAR can pierce through murky water just fine since it uses sound instead of light!
+    -> The water is moving too fast for LIDAR to get through!
+        Bubby: Good guess, but the speed of the water won't matter to LIDAR since it uses light! LIDAR won't work here because the sediment blocks the light ray before it can show us obstacles.
+        Bubby: We can use SONAR instead - SONAR can pierce through murky water just fine since it uses sound instead of light! It'll show us if there's anything hiding in here.
+    -> It takes more energy to use LIDAR with all the dirt around.
+        Bubby: Good guess, but all this sediment means the light ray can't get through to see if there are obstacles in our way!
+    -> Actually, I don't know. Can you remind me?
+        Bubby: LIDAR won't work because the sediment in the water disturbs with the LIDAR ray! The light can't get through the dirt.
+        Bubby: We can use SONAR instead - SONAR can pierce through murky water just fine since it uses sound instead of light! It'll show us if there's anything hiding in here.
+<<playerCanMove Player>>
+===
+
+title: BubbleVent
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>> <<setSonar SonarPulse false>>
+Bubby: Oh look, a bubble vent! We'll have to be careful, bubbles can cause problems with our SONAR sensor.
+Bubby: Do you know why bubbles could cause problems for SONAR?
+-> No, why might bubbles cause a problem?
+    Bubby: SONAR won't work around bubbles because when the sound hits them, it has to move between air and water, which changes the speed it moves at and messes with our ability to measure how fast it comes back to us!
+    Bubby: We'll need to use LIDAR here instead- bubbles can't block light after all!
+-> Yes I do!
+    Bubby: Awesome! Why can't we use SONAR when bubbles are around??
+    -> The bubbles burst when hit with sound!
+        Bubby: Almost but not quite! When sound hits a bubble, it has to move between air and water, which changes the speed it moves at and messes with our ability to measure how fast it comes back to us!
+        Bubby: We'll need to use LIDAR here instead- bubbles can't block light after all!
+    -> The bubbles block the sound!
+        Bubby: Almost but not quite! When sound hits a bubble, it has to move between air and water, which changes the speed it moves at and messes with our ability to measure how fast it comes back to us!
+        Bubby: We'll need to use LIDAR here instead- bubbles can't block light after all!
+    -> The bubbles change the speed of the sound!
+        Bubby: That's right! When sound hits a bubble, it has to move between air and water, which changes the speed it moves at and messes with our ability to measure how fast it comes back to us!
+        Bubby: We'll need to use LIDAR here instead- bubbles can't block light after all!
+    -> Actually, I don't know. Can you tell me?
+        Bubby: SONAR won't work around bubbles because when the sound hits them, it has to move between air and water, which changes the speed it moves at and messes with our ability to measure how fast it comes back to us!
+        Bubby: We'll need to use LIDAR here instead- bubbles can't block light after all!
+<<playerCanMove Player>>
+===
+
+title: Fish
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>>
+Bubby: Look, some fish! That means we're getting closer to my home, but it does mean I'll have to be careful when using SONAR.
+Bubby: SONAR can damage marine life if used nearby, especially animals like whales and dolphins that use high-frequency sounds to communicate or echolocate! Let's avoid using SONAR when there are other fish nearby!
+<<playerCanMove Player>>
+===
+
+title: Treasure
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>>
+Bubby: Wow, look! We found some treasure! Let's add it to our stash and keep going!
+<<foundTreasure Player>> <<playerCanMove Player>>
+===
+
+title: Finish_RADAR
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>>
+<<loadNextLevel LevelLoader>>
+===
+
+title: Finish_SONAR
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>>
+<<loadNextLevel LevelLoader>>
+===
+
+title: Start_SONAR
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>> <<setSonar SonarPulse false>>
+Bubby: We made it to the next area! My friends call this place the Murky Maze, because there are a lot of areas where the water is murky and hard to see through.
+Bubby: Last time we used my LIDAR to discover things around us. This time we'll also need to use my SONAR sensor!
+Bubby: To use SONAR, you'll need to hit the right mouse button. Watch out though, it consumes more energy than LIDAR does!
+Bubby: SONAR works by creating a sound wave that bounces off nearby objects. The time it takes to come back tells us how far away something is!
+Bubby: Once we make it through this area we'll be almost home! Let's keep going!
+<<playerCanMove Player>>
+===
+
+title: Pearl
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>> <<setSonar SonarPulse false>>
+Bubby: Hello Pearl! It's great to see you!
+Pearl the Clam: Bubby! It's been a long time, how are you doing? You normally go straight home from here though... are you lost?
+Bubby: Yes! A new update reset my navigation data. My new friend helped me get this far, but we need a little help to find the way home from here.
+Pearl: Oh that's easy! I've marked the location of the tunnel on your map. Have a good trip home, but look out for obstacles!
+Bubby: Thanks a lot Pearl! Let's head for the red point on my map- we're so close to home!
+<<playerCanMove Player>> <<enableFinish Player>> 
+===
+
+title: Signpost
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>> <<setSonar SonarPulse false>>
+Bubby: There's a signpost here! Hit shift to expand my light so we can read it!
+Bubby: Pearl made these a while back to point to her home. Follow the instructions so we can find her!
+<<playerCanMove Player>>
+===
+
+title: Wrong_Clam
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>> <<setSonar SonarPulse false>>
+Bubby: I think I detect a clam up ahead! Let's see, is that Pearl?
+Bubby: Which of my sensors is the right tool to see if this clam is my friend Pearl?
+-> LIDAR!
+    Bubby: Nope, not quite! LIDAR can give us a lot of information about the shape of an object, but won't give us details like color or writing!
+    Bubby: In this scenario we need to use the light/camera because it allows us to see the details of an object and use our object recognition skills to determine if it's what we're looking for.
+-> SONAR!
+    Bubby: Nope, not quite! SONAR can give us a lot of information about the location and some details about the shape of an object, but won't give us details like color or writing!
+    Bubby: In this scenario we need to use the light/camera because it allows us to see the details of an object and use our object recognition skills to determine if it's what we're looking for. 
+-> Your Light/Camera!
+    Bubby: Yes, that's right! The light/camera allows us to see the actual colors and details of an object and use our object recognition skills to determine if it's what we're looking for.
+-> I don't know.
+    Bubby: That's okay! In this scenario we need to use the light/camera because it allows us to see the details of an object and use our object recognition skills to determine if it's what we're looking for.
+<<cameraEnabled AnglerfishLight true>>
+Bubby: Oh no, that isn't Pearl, she generally has her shell open a little unlike this clam. Let's follow the signs and find Pearl!
+<<playerCanMove Player>> <<cameraEnabled AnglerfishLight false>>
+===
+
+
+title: Start_CAMERA
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>> <<setSonar SonarPulse false>>
+Bubby: We're almost home - this is the last area, the Sunken Shipyard! My home is very close to here!
+Bubby: It looks like the pressure at this depth has caused the lights to fail on the signposts, so we'll need to get close and use my light to read the instructions on the signposts.
+Bubby: You can hold down the shift key to make my light expand so we can see better. But look out, using my light and my bad eyes to see drains my energy fastest of all!
+Bubby: In other AI powered systems, cameras serve the same purpose as your eyes do when we light up the area - they can recognize objects and give us lots of details about what they see!
+Bubby: Let's look for signposts, they'll tell us how to find my friend Pearl - she should know how to get us home from here! Let's go!
+<<playerCanMove Player>>
+===
+
+title: Finish_CAMERA
+tags:
+---
+<<playerCantMove Player>> <<setLIDAR RadarTriangle false>> <<setSonar SonarPulse false>>
+Bubby: This is the tunnel to my home! We finally made it! Thanks to helping me use my SONAR, LIDAR and Camera to navigate the dark waters. I couldn't have done it without you!
+Bubby: Now you know a whole lot more about how AI-powered systems like me see the world! We've learned so much - now it's time to celebrate!
+<<loadNextLevel LevelLoader>>
+===
