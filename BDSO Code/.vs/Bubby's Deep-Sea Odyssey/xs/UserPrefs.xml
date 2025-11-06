@@ -1,0 +1,26 @@
+﻿<Properties>
+  <MonoDevelop.Ide.ItemProperties.2DHandPainted PreferredExecutionTarget="727807b4-a11f-47b1-822a-bb1c5f556090" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AudioManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/AudioManager.cs" Line="13" Column="38" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" />
+      <File FileName="Assets/Scripts/SensorScripts/RadarControl.cs" />
+      <File FileName="Assets/Scripts/SensorScripts/SonarPulse.cs" />
+      <File FileName="Assets/Scripts/SensorScripts/ExpandLight.cs" />
+      <File FileName="Assets/Scripts/Yarn Scripts/YarnInteractable.cs" Line="49" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Bubby's Deep-Sea Odyssey" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
