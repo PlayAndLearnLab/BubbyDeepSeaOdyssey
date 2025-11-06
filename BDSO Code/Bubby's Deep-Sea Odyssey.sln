@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2DHandPainted", "2DHandPainted.csproj", "{6107B6EC-760F-3940-2F40-2B924F90B045}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{A7E8359C-2EC9-AD0A-26FD-BE366A2D514B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2DHandPaintedEditor", "2DHandPaintedEditor.csproj", "{E101AA60-CF4B-5FD6-A2BE-7DBC47687AF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6107B6EC-760F-3940-2F40-2B924F90B045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6107B6EC-760F-3940-2F40-2B924F90B045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6107B6EC-760F-3940-2F40-2B924F90B045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6107B6EC-760F-3940-2F40-2B924F90B045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7E8359C-2EC9-AD0A-26FD-BE366A2D514B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E8359C-2EC9-AD0A-26FD-BE366A2D514B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E8359C-2EC9-AD0A-26FD-BE366A2D514B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E8359C-2EC9-AD0A-26FD-BE366A2D514B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E101AA60-CF4B-5FD6-A2BE-7DBC47687AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E101AA60-CF4B-5FD6-A2BE-7DBC47687AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E101AA60-CF4B-5FD6-A2BE-7DBC47687AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E101AA60-CF4B-5FD6-A2BE-7DBC47687AF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
