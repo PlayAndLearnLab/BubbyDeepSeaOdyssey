@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-/Users/solyaneberge/Unity/Bubbys_Deep_Sea_Odyssey_og/BDSO Code
-=======
-/Users/sophieclyde/Documents/School/Grad School/GA Tech/Play & Learn Lab/Bubby's Deep-Sea Odyssey
->>>>>>> c7cfdac44cf490d1e4df51183feb5fe4f7679d67
+/Users/solyaneberge/Unity/Bubbys_Deep_Sea_Odyssey_og_copy/BDSO Code
