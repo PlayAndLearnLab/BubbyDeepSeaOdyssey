@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/RadarLevel.unity
-=======
-- path: Assets/Scenes/MainMenu.unity
->>>>>>> c7cfdac44cf490d1e4df51183feb5fe4f7679d67
   isLoaded: 1
   isActive: 1
   isSubScene: 0
